@@ -118,6 +118,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Substratum
+PRODUCT_PACKAGES += \
+    ThemeInterfacer
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -164,10 +168,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_NAME := full_P6
 PRODUCT_DEVICE := P6
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal

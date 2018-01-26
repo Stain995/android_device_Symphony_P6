@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := P6
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/Symphony/P6/device_P6.mk)
@@ -12,8 +12,15 @@ PRODUCT_LOCALES := en_US ru_RU en_AU en_IN fr_FR it_IT es_ES et_EE de_DE nl_NL c
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := P6
-PRODUCT_NAME := lineage_P6
+PRODUCT_NAME := aicp_P6
 PRODUCT_BRAND := Symphony
 PRODUCT_MODEL := P6
 PRODUCT_MANUFACTURER := Symphony
+
+# Correct bootanimation size for the screen
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
+# Boot animation
+include vendor/aicp/configs/bootanimation.mk
 
