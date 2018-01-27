@@ -1,6 +1,8 @@
 # android_device_Symphony_P6
 
-LineageOS-14.1 For Symphony P6
+#Specifications:
+
+AICP 12.1 For Symphony P6
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -16,21 +18,17 @@ Camera  | 13mp Rear, 5mp front
 
 
 
-# Build Commands :-
+# Build Commands:
 
-  * repo init -u git://github.com/TestMT6572/android.git -b cm-14.1
-  * repo sync
-  * git clone https://github.com/a7raj/android_device_Symphony_P6.git device/Symphony/P6
-  * git clone https://github.com/a7raj/android_vendor_Symphony_P6.git vendor/Symphony/P6
-  * source build/envsetup.sh
-  * brunch P6
+  $ git clone https://github.com/Stain995/android_device_Symphony_P6.git device/Symphony/P6
+  $ git clone https://github.com/a7raj/android_vendor_Symphony_P6.git vendor/Symphony/P6
 
 
-# Credits/Thanks to:-
+# Credits/Thanks:
 
- * tribetmen
- * mehanic6
- * manjotsidhu
- * StainYY
- * SamSanuch
- * a7raj
+ tribetmen
+ mehanic6
+ manjotsidhu
+ StainYY
+ SamSanuch
+ a7raj
