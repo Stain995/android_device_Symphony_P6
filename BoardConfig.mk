@@ -3,9 +3,6 @@
 
 LOCAL_PATH := device/Symphony/P6
 
-# Off NINJA
-#USE_NINJA := false
-
 # Board
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -72,10 +69,7 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # Kernel 
-#BOARD_KERNEL_CMDLINE += \
-	bootopt=64S3,32S1,32S1 \
-	androidboot.selinux=permissive
-	
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
