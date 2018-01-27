@@ -1,8 +1,6 @@
 # android_device_Symphony_P6
 
-#Specifications:
-
-AICP 12.1 For Symphony P6
+- **AICP 12.1**  For Symphony P6
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -18,17 +16,21 @@ Camera  | 13mp Rear, 5mp front
 
 
 
-# Build Commands:
+# Build Commands :-
 
-  $ git clone https://github.com/Stain995/android_device_Symphony_P6.git device/Symphony/P6
-  $ git clone https://github.com/a7raj/android_vendor_Symphony_P6.git vendor/Symphony/P6
+  * repo init -u https://github.com/Stain995/platform_manifest.git -b n7.1
+  * repo sync -f --force-sync --no-clone-bundle
+  * source build/envsetup.sh
+  * lunch aicp_P6-userdebug
+  * brunch P6
 
+#[ Note: all device and vendor tree is included in platform manifest so no need to clone it again and again! ]
 
-# Credits/Thanks:
+# Credits/Thanks to:-
 
- tribetmen
- mehanic6
- manjotsidhu
- StainYY
- SamSanuch
- a7raj
+ * tribetmen
+ * mehanic6
+ * manjotsidhu
+ * StainYY
+ * SamSanuch
+ * a7raj
