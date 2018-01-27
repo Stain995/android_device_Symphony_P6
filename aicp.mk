@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := P6
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aicp/config/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/Symphony/P6/device_P6.mk)
